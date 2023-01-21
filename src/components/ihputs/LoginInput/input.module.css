@@ -1,0 +1,22 @@
+.input_container {
+    position: relative;
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+    display: flex;
+    justify-content: center;
+}
+
+.input_container>input {
+    padding: 0.5em 1em;
+    color: black;
+}
+
+.input_error_container {
+    position: absolute;
+    top: 110%;
+    left: 10px;
+}
+
+.input_error {
+    background-color: rgb(236, 123, 123);
+}

@@ -1,0 +1,51 @@
+/* Containers */
+
+.login_comtainer {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('../../images/site_background.jpg');
+    background-size: cover;
+}
+
+/* Containers end */
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25rem;
+    background: url('../../images/login_form.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 4em 2em 3em 3em;
+}
+
+.login>* {
+    margin-top: 10px;
+}
+
+.login_form {
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#login_title {
+    color: white;
+    font-weight: 500;
+    font-size: 2.2rem;
+}
+
+.links_redirect {
+    font-size: 1.3rem;
+    margin-bottom: 7px;
+    color: black;
+    font-weight: 700;
+}
+
+.button {}
