@@ -1,0 +1,22 @@
+input {
+    caret-color: blue;
+    padding: 0.5em 1em;
+    outline: none;
+}
+
+.input_error_container {
+    position: absolute;
+    top: 105%;
+    left: 10px;
+}
+
+.input_error {
+    background-color: rgb(252, 235, 235);
+    border-color: transparent;
+}
+
+.errorText {
+    color: red;
+    font-size: 1.1em;
+    font-weight: 700;
+}
