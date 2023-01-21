@@ -3,12 +3,14 @@ import Input from './component/inputs/LoginInput/Input'
 import classes from './Login.module.css'
 import { formErrors } from './interface/interface'
 import { validateLoginForm } from './utils/utils'
+import PasswordInput from './component/inputs/PasswordInput/Input'
 const PageLogin = () => {
   const [authForm, setAuthForm] = React.useState({ username: '', password: '' })
   const [formErrors, setFormErrors] = React.useState<formErrors>({
     username: '',
     password: ''
   })
+  console.log(authForm.username)
   return (
     <div className={classes.login_comtainer}>
       <div className={classes.login}>
@@ -31,10 +33,10 @@ const PageLogin = () => {
           </div>
           <div className={classes.input_container}>
             <label className={classes.inputLabel}>Пароль</label>
-            <Input
+            <PasswordInput
               isError={!!formErrors.password}
               isErrorText={formErrors.password}
-              type='password'
+              value={authForm.password}
               placeholder='lena@gmail.com'
               onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
                 const username = e.target.value
